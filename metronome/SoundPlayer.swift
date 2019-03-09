@@ -11,7 +11,7 @@ import AVFoundation
 class SoundPlayer {
     private var tickSound: AVAudioPlayer?
     private var tockSound: AVAudioPlayer?
-    var beats: UInt8 = 1
+    private var beats: UInt8 = 1
     private var counter: UInt8 = 1
     
     init() {
@@ -42,6 +42,11 @@ class SoundPlayer {
                 counter = 1
             }
         }
+    }
+    
+    func changeBeats(beats: UInt8) {
+        self.beats = beats
+        counter = 1
     }
     
     func printBeats() -> String {

@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func countSliderValueChanged(_ sender: UISlider) {
-        soundPlayer.beats = UInt8(sender.value)
+        soundPlayer.changeBeats(beats: UInt8(sender.value))
         beatsLabel.text = soundPlayer.printBeats()
     }
     

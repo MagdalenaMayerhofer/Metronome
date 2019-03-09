@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC61AAEB223258E700FD8F64 /* Build configuration list for PBXProject "metronome" */;
+			buildConfigurationList = FC61AAEB223258E700FD8F64 /* Build configuration list for PBXProject "Metronome" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -304,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mayerhofer.metronome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,14 +322,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mayerhofer.metronome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC61AAEB223258E700FD8F64 /* Build configuration list for PBXProject "metronome" */ = {
+		FC61AAEB223258E700FD8F64 /* Build configuration list for PBXProject "Metronome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC61AB00223258EA00FD8F64 /* Debug */,

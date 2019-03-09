@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,11 +14,45 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="v5b-tz-jrj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="40" minValue="40" maxValue="240" translatesAutoresizingMaskIntoConstraints="NO" id="8Gm-GV-fMl">
+                                <rect key="frame" x="48" y="86" width="279" height="31"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="minimumTrackTintColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V97-NE-83z">
+                                <rect key="frame" x="186.5" y="233" width="2" height="324"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="Sej-Sd-kWq"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-4" minValue="-4" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zja-6R-v7Y">
+                                <rect key="frame" x="48" y="173" width="279" height="31"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="minimumTrackTintColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ghA-Gy-D4o" firstAttribute="trailing" secondItem="8Gm-GV-fMl" secondAttribute="trailing" constant="50" id="07F-KG-tRG"/>
+                            <constraint firstItem="8Gm-GV-fMl" firstAttribute="leading" secondItem="ghA-Gy-D4o" secondAttribute="leading" constant="50" id="Auz-P5-a9s"/>
+                            <constraint firstItem="8Gm-GV-fMl" firstAttribute="top" secondItem="ghA-Gy-D4o" secondAttribute="top" constant="66" id="GHo-5G-zn9"/>
+                            <constraint firstItem="Zja-6R-v7Y" firstAttribute="leading" secondItem="ghA-Gy-D4o" secondAttribute="leading" constant="50" id="bTv-PR-LC7"/>
+                            <constraint firstItem="ghA-Gy-D4o" firstAttribute="trailing" secondItem="Zja-6R-v7Y" secondAttribute="trailing" constant="50" id="iAA-eF-hzE"/>
+                            <constraint firstItem="Zja-6R-v7Y" firstAttribute="top" secondItem="8Gm-GV-fMl" secondAttribute="bottom" constant="57" id="jlx-Yg-Tzy"/>
+                            <constraint firstItem="V97-NE-83z" firstAttribute="top" secondItem="Zja-6R-v7Y" secondAttribute="bottom" constant="30" id="ju6-gD-HKs"/>
+                            <constraint firstItem="V97-NE-83z" firstAttribute="centerX" secondItem="v5b-tz-jrj" secondAttribute="centerX" id="nTN-9X-WGQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="V97-NE-83z" secondAttribute="bottom" constant="110" id="s5j-WI-mKH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ghA-Gy-D4o"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
