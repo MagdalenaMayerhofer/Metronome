@@ -13,7 +13,8 @@
 		FC61AAFB223258EA00FD8F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC61AAFA223258EA00FD8F64 /* Assets.xcassets */; };
 		FC61AAFE223258EA00FD8F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC61AAFC223258EA00FD8F64 /* LaunchScreen.storyboard */; };
 		FC85E8D02232F3CF0029BFFA /* TickerThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85E8CF2232F3CF0029BFFA /* TickerThread.swift */; };
-		FC85E8D4223300D40029BFFA /* tick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FC85E8D3223300D40029BFFA /* tick.m4a */; };
+		FCA0D31E2233B6D400E13D35 /* tick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCA0D31C2233B6D400E13D35 /* tick.m4a */; };
+		FCA0D31F2233B6D400E13D35 /* tock.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCA0D31D2233B6D400E13D35 /* tock.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		FC61AAFD223258EA00FD8F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC61AAFF223258EA00FD8F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC85E8CF2232F3CF0029BFFA /* TickerThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerThread.swift; sourceTree = "<group>"; };
-		FC85E8D3223300D40029BFFA /* tick.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tick.m4a; sourceTree = "<group>"; };
+		FCA0D31C2233B6D400E13D35 /* tick.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tick.m4a; sourceTree = "<group>"; };
+		FCA0D31D2233B6D400E13D35 /* tock.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tock.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +44,8 @@
 		FC61AAE7223258E700FD8F64 = {
 			isa = PBXGroup;
 			children = (
-				FC85E8D3223300D40029BFFA /* tick.m4a */,
+				FCA0D31C2233B6D400E13D35 /* tick.m4a */,
+				FCA0D31D2233B6D400E13D35 /* tock.m4a */,
 				FC61AAF2223258E700FD8F64 /* metronome */,
 				FC61AAF1223258E700FD8F64 /* Products */,
 			);
@@ -131,7 +134,8 @@
 				FC61AAFE223258EA00FD8F64 /* LaunchScreen.storyboard in Resources */,
 				FC61AAFB223258EA00FD8F64 /* Assets.xcassets in Resources */,
 				FC61AAF9223258E700FD8F64 /* Main.storyboard in Resources */,
-				FC85E8D4223300D40029BFFA /* tick.m4a in Resources */,
+				FCA0D31F2233B6D400E13D35 /* tock.m4a in Resources */,
+				FCA0D31E2233B6D400E13D35 /* tick.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

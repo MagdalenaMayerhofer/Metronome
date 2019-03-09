@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var bpmLabel: UILabel!
+    @IBOutlet weak var beatsLabel: UILabel!
     @IBOutlet weak var metronomePointer: UIView!
     var bpm: UInt8 = 40
+    var beats: UInt8 = 1
     var tickerThread: TickerThread?
 
     override func viewDidLoad() {
@@ -26,6 +28,19 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func countSliderValueChanged(_ sender: UISlider) {
+        beats = UInt8(sender.value)
+        if beats == 1 {
+            beatsLabel.text = "\(beats) Beat"
+        } else {
+            beatsLabel.text = "\(beats) Beats"
+        }
+    
+        if let tickerThread = tickerThread {
+            tickerThread.beats = beats
+        }
+    }
+    
     @IBAction func buttonPressed(_ sender: UIButton) {
         if let tickerThread = tickerThread {
             sender.setTitle("Start", for: UIControl.State.normal)
@@ -33,7 +48,7 @@ class ViewController: UIViewController {
             self.tickerThread = nil
         } else {
             sender.setTitle("Stop", for: UIControl.State.normal)
-            tickerThread = TickerThread(bpm: bpm)
+            tickerThread = TickerThread(bpm: bpm, beats: beats)
         }
     }
 }
