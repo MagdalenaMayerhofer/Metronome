@@ -12,9 +12,9 @@
 		FC61AAF9223258E700FD8F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC61AAF7223258E700FD8F64 /* Main.storyboard */; };
 		FC61AAFB223258EA00FD8F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC61AAFA223258EA00FD8F64 /* Assets.xcassets */; };
 		FC61AAFE223258EA00FD8F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC61AAFC223258EA00FD8F64 /* LaunchScreen.storyboard */; };
-		FC85E8D02232F3CF0029BFFA /* TickerThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85E8CF2232F3CF0029BFFA /* TickerThread.swift */; };
 		FCA0D31E2233B6D400E13D35 /* tick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCA0D31C2233B6D400E13D35 /* tick.m4a */; };
 		FCA0D31F2233B6D400E13D35 /* tock.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCA0D31D2233B6D400E13D35 /* tock.m4a */; };
+		FCA0D32522340C9600E13D35 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D32422340C9600E13D35 /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		FC61AAFA223258EA00FD8F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC61AAFD223258EA00FD8F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC61AAFF223258EA00FD8F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC85E8CF2232F3CF0029BFFA /* TickerThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerThread.swift; sourceTree = "<group>"; };
 		FCA0D31C2233B6D400E13D35 /* tick.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tick.m4a; sourceTree = "<group>"; };
 		FCA0D31D2233B6D400E13D35 /* tock.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tock.m4a; sourceTree = "<group>"; };
+		FCA0D32422340C9600E13D35 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +62,13 @@
 		FC61AAF2223258E700FD8F64 /* metronome */ = {
 			isa = PBXGroup;
 			children = (
+				FCA0D32422340C9600E13D35 /* SoundPlayer.swift */,
 				FC61AAF3223258E700FD8F64 /* AppDelegate.swift */,
 				FC61AAF5223258E700FD8F64 /* ViewController.swift */,
 				FC61AAF7223258E700FD8F64 /* Main.storyboard */,
 				FC61AAFA223258EA00FD8F64 /* Assets.xcassets */,
 				FC61AAFC223258EA00FD8F64 /* LaunchScreen.storyboard */,
 				FC61AAFF223258EA00FD8F64 /* Info.plist */,
-				FC85E8CF2232F3CF0029BFFA /* TickerThread.swift */,
 			);
 			path = metronome;
 			sourceTree = "<group>";
@@ -146,8 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC85E8D02232F3CF0029BFFA /* TickerThread.swift in Sources */,
 				FC61AAF6223258E700FD8F64 /* ViewController.swift in Sources */,
+				FCA0D32522340C9600E13D35 /* SoundPlayer.swift in Sources */,
 				FC61AAF4223258E700FD8F64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

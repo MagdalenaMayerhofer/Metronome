@@ -43,10 +43,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-Eq-oGD">
-                                <rect key="frame" x="186.5" y="233" width="2" height="324"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="186.5" y="233" width="2" height="648"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lN6-xf-j7r">
+                                        <rect key="frame" x="0.0" y="0.0" width="2" height="324"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="lN6-xf-j7r" firstAttribute="top" secondItem="5C6-Eq-oGD" secondAttribute="top" id="39K-8p-YiO"/>
+                                    <constraint firstItem="lN6-xf-j7r" firstAttribute="height" secondItem="5C6-Eq-oGD" secondAttribute="height" multiplier="1:2" id="adN-C5-vwg"/>
                                     <constraint firstAttribute="width" constant="2" id="eQr-OQ-YfB"/>
+                                    <constraint firstItem="lN6-xf-j7r" firstAttribute="leading" secondItem="5C6-Eq-oGD" secondAttribute="leading" id="qpe-FK-wOk"/>
+                                    <constraint firstAttribute="trailing" secondItem="lN6-xf-j7r" secondAttribute="trailing" id="rCb-zg-DSa"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxl-GH-lg8">
@@ -87,7 +97,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jxl-GH-lg8" firstAttribute="top" secondItem="5C6-Eq-oGD" secondAttribute="bottom" constant="30" id="03z-4F-RMb"/>
+                            <constraint firstItem="5C6-Eq-oGD" firstAttribute="height" secondItem="bei-Js-Q5o" secondAttribute="height" multiplier="2:1" id="1qD-Ms-V6K"/>
                             <constraint firstItem="bei-Js-Q5o" firstAttribute="top" secondItem="fPC-tb-Mo8" secondAttribute="bottom" constant="30" id="300-2n-A2P"/>
                             <constraint firstItem="5C6-Eq-oGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CMs-JI-SGJ"/>
                             <constraint firstItem="fPC-tb-Mo8" firstAttribute="top" secondItem="3q6-NI-9Uz" secondAttribute="bottom" constant="15" id="Dva-qa-Mr8"/>
