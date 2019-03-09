@@ -15,6 +15,8 @@
 		FCA0D31E2233B6D400E13D35 /* tick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCA0D31C2233B6D400E13D35 /* tick.m4a */; };
 		FCA0D31F2233B6D400E13D35 /* tock.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCA0D31D2233B6D400E13D35 /* tock.m4a */; };
 		FCA0D32522340C9600E13D35 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA0D32422340C9600E13D35 /* SoundPlayer.swift */; };
+		FCA0D329223437A300E13D35 /* Metronome_Started.PNG in Resources */ = {isa = PBXBuildFile; fileRef = FCA0D327223437A300E13D35 /* Metronome_Started.PNG */; };
+		FCA0D32A223437A300E13D35 /* Metronome_Stoped.PNG in Resources */ = {isa = PBXBuildFile; fileRef = FCA0D328223437A300E13D35 /* Metronome_Stoped.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		FCA0D31C2233B6D400E13D35 /* tick.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tick.m4a; sourceTree = "<group>"; };
 		FCA0D31D2233B6D400E13D35 /* tock.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tock.m4a; sourceTree = "<group>"; };
 		FCA0D32422340C9600E13D35 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		FCA0D326223436D000E13D35 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FCA0D327223437A300E13D35 /* Metronome_Started.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Metronome_Started.PNG; sourceTree = "<group>"; };
+		FCA0D328223437A300E13D35 /* Metronome_Stoped.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Metronome_Stoped.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,9 @@
 		FC61AAE7223258E700FD8F64 = {
 			isa = PBXGroup;
 			children = (
+				FCA0D327223437A300E13D35 /* Metronome_Started.PNG */,
+				FCA0D328223437A300E13D35 /* Metronome_Stoped.PNG */,
+				FCA0D326223436D000E13D35 /* README.md */,
 				FCA0D31C2233B6D400E13D35 /* tick.m4a */,
 				FCA0D31D2233B6D400E13D35 /* tock.m4a */,
 				FC61AAF2223258E700FD8F64 /* metronome */,
@@ -131,9 +139,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA0D329223437A300E13D35 /* Metronome_Started.PNG in Resources */,
 				FC61AAFE223258EA00FD8F64 /* LaunchScreen.storyboard in Resources */,
 				FC61AAFB223258EA00FD8F64 /* Assets.xcassets in Resources */,
 				FC61AAF9223258E700FD8F64 /* Main.storyboard in Resources */,
+				FCA0D32A223437A300E13D35 /* Metronome_Stoped.PNG in Resources */,
 				FCA0D31F2233B6D400E13D35 /* tock.m4a in Resources */,
 				FCA0D31E2233B6D400E13D35 /* tick.m4a in Resources */,
 			);
