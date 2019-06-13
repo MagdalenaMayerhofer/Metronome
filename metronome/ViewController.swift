@@ -63,6 +63,7 @@ class ViewController: UIViewController {
     //  The startMetronome methode sets the timer and starts the animation of the metronome pointer.
     //
     func startMetronome() {
+        UIApplication.shared.isIdleTimerDisabled = true
         metronomeStarted = true
         UIView.animate(withDuration: 60.0 / Double(bpm), animations: {
             self.metronomePointer.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 8)
@@ -74,6 +75,7 @@ class ViewController: UIViewController {
     //  The stopMetronome methode stops the timer and stops the animation of the metronome pointer.
     //
     func stopMetronome() {
+        UIApplication.shared.isIdleTimerDisabled = false
         metronomeStarted = false
         soundPlayer.setMeasureToTheBegin()
         timer.invalidate()
